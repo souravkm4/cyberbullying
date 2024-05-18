@@ -1,0 +1,16 @@
+def bi(n,exp=0.001):
+ l=0
+ u=n
+ ans=(u+l)/2.0
+ a=(input("enter the value"))
+ while abs(ans**2-n)>exp:
+  if  ans**2<n:
+   l=ans 
+  else:
+   u=ans
+  ans=(u+l)/2.0
+ return ans
+print(bi(a))
+      
+ 
+ 
